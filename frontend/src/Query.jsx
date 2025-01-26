@@ -14,7 +14,7 @@ function Query() {
     setLoading(true);
     setError('');
     try {
-      const response = await axios.get('http://localhost:5000/api/search', {
+      const response = await axios.get('https://speakxassignment.onrender.com/api/search', {
         params: { q: query, page: newPage },
       });
       setResults(response.data.results);
